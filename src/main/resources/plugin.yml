@@ -1,0 +1,18 @@
+name: PixelMOTD
+version: '${project.version}'
+main: ru.camper_crafting.pixelmotd.PixelMOTD
+api-version: '1.16'
+authors: [camper_crafting]
+description: A flexible MOTD plugin with HEX colors support and fake max players
+depend: [ForestCore]
+
+commands:
+  pixelmotd:
+    description: Основная команда плагина PixelMOTD
+    usage: /pixelmotd [reload]
+    aliases: [pmotd]
+
+permissions:
+  pixelmotd.reload:
+    description: Позволяет перезагружать конфигурацию плагина
+    default: op 
